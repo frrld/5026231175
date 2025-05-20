@@ -1,0 +1,26 @@
+body {
+    background-color: beige;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'inter';
+}
+p {
+    color: slategrey;
+}
+a:link {
+    text-decoration: none;
+    color :red;
+}
+a:visited {
+    text-decoration: none;
+    color :purple;
+}
+a:hover {
+    text-decoration: none;
+    color :aqua;
+    font-weight: bold;
+}
+
+.formatheader {
+    font-size: larger;
+}

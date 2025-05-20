@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    background-color: #013d7a;
+    width: 250px; /* Menurunkan ukuran sidebar */
+    min-height: 100vh;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-header {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center; /* Membuat gambar dan teks berada sejajar secara horizontal */
+    justify-content: flex-start; /* Mengatur posisi kiri untuk gambar dan teks */
+    width: 100%; /* Menggunakan lebar penuh */
+}
+
+.profile-info img {
+    border-radius: 50%;
+    margin-right: 15px; /* Memberi jarak antara gambar dan teks */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Menyusun teks secara vertikal di sebelah gambar */
+}
+
+.sidebar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0;
+    border-radius: 5px;
+}
+
+.sidebar-links a:hover {
+    background-color: #495057;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+}
+
+.sidebar-link.logout {
+    color: white;
+    background-color: #4950578f;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    width: 60%; /* Make it take up full width */
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.sidebar-link.logout:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.sidebar-link:hover {
+    background-color: #495057;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px; /* Menyesuaikan lebar sidebar */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Section */
+.filter-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card select {
+    margin-bottom: 10px;
+}
+
+.filter-card .text-right {
+    margin-top: 20px;
+}
+
+/* No Results Section */
+.no-results {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rounded-circle {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
