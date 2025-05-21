@@ -19,7 +19,7 @@
                     <div class="sidebar-header">
                         <br><br><br> <!-- Menambah jarak -->
                         <div class="profile-info">
-                            <img src="public/asset/Frame 40792-3.png" class="rounded-circle" alt="Admin" width="60px" height="60px">
+                            <img src="asset/Frame 40792-3.png" class="rounded-circle" alt="Admin" width="60px" height="60px">
                             <div class="user-info">
                                 <h5 class="mt-2">User</h5>
                                 <p>user@mail.com</p>
@@ -96,7 +96,7 @@
                 <!-- No Results Section -->
                 <div class="no-results">
                     <div class="text-center text-muted">
-                        <img src="public/asset/Screenshot_2025-03-19_121145-removebg-preview.png" alt="No Results" width="500px" height="250px">
+                        <img src="asset/Screenshot_2025-03-19_121145-removebg-preview.png" alt="No Results" width="500px" height="250px">
                         <h4 class="mb-3">Maaf, kami tidak bisa menemukan PRT yang cocok</h4>
                         <p>Coba pencarian lain!</p>
                     </div>

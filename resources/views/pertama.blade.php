@@ -36,7 +36,7 @@
         </p>
         <p>Lebih lanjut, dosen yang akrab disapa Mashuri ini menjelaskan, kegiatan mentoring ini terdiri dari beberapa rangkaian acara. Adapun diawali dengan dengan kuliah umum yang menghadirkan empat materi utama dari dosen-dosen agama Islam ITS sebagai pondasi awal. Setelah mendapatkan pemahaman dasar, mahasiswa mengikuti kelas pendalaman dalam enam sesi yang mencakup diskusi dan ujian untuk menguji pemahaman mereka.
         </p>
-        <img src="public/asset/img1pweb.jpg" alt="Pak Adi" width="500">
+        <img src="asset/img1pweb.jpg" alt="Pak Adi" width="500">
         <br>
         Dosen agama islam ITS Prof Dr Ir Adi Soeprijanto MT saat memberikan materi sirah nabawi pada Kuliah Umum Mentoring Agama Islam Semester Genap 2024/2025
 
