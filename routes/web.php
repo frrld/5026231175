@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +22,12 @@ Route::get('halo', function () {
 	return "<h2>Halo, Selamat datang di tutorial laravel www.malasngoding.com</h2>";
 });
 
-Route::get('/blog', function () {
-	return view('blog');
+Route::get('/frontend', function () {
+    return view('frontend');
+});
+
+Route::get('/blogmalasngoding', function () {
+	return view('blogmalasngoding');
 });
 
 Route::get('/Bootstrap1', function () {
@@ -47,7 +54,14 @@ Route::get('/linktree', function () {
 	return view('linktree');
 });
 
-Route::get('/frontend', function () {
-    return view('frontend');
-});
+Route::get('dosen', [Controller::class, 'index']);
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'show']);
+
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
