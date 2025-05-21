@@ -47,7 +47,7 @@ Route::get('/linktree', function () {
 	return view('linktree');
 });
 
-Route::get('/landingpage', function () {
-    return view('landingpage');
+Route::get('/frontend', function () {
+    return view('frontend');
 });
 
