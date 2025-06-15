@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\MonitorController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\KaryawanController2;
 
 /*
 |--------------------------------------------------------------------------
@@ -91,3 +92,19 @@ Route::get('/karyawan/edit/{kodepegawai}', [KaryawanController::class,'edit']);
 Route::post('/karyawan/update',[KaryawanController::class,'update']);
 Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class,'hapus']);
 Route::get('/karyawan/cari', [KaryawanController::class,'cari']);
+
+//CRUD KeranjangBelanja
+
+use App\Http\Controllers\KeranjangBelanjaController;
+
+Route::get('/keranjang', [KeranjangBelanjaController::class, 'index'])->name('keranjang.index');
+Route::get('/keranjang/create', [KeranjangBelanjaController::class, 'create'])->name('keranjang.create');
+Route::post('/keranjang', [KeranjangBelanjaController::class, 'store'])->name('keranjang.store');
+Route::delete('/keranjang/{id}', [KeranjangBelanjaController::class, 'destroy'])->name('keranjang.destroy');
+Route::get('/keranjang/cari', [KeranjangBelanjaController::class, 'cari'])->name('keranjang.cari');
+
+// Week 15 EAS exercise Laki-laki NRP Genap
+Route::get('/karyawan2', [KaryawanController2::class, 'index']);
+Route::get('/karyawan2/tambah', [KaryawanController2::class, 'tambah']);
+Route::post('/karyawan2/store', [KaryawanController2::class, 'store']);
+Route::get('/karyawan2/hapus/{id}', [KaryawanController2::class, 'hapus']);
