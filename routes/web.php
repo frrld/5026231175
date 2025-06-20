@@ -108,3 +108,11 @@ Route::get('/karyawan2', [KaryawanController2::class, 'index']);
 Route::get('/karyawan2/tambah', [KaryawanController2::class, 'tambah']);
 Route::post('/karyawan2/store', [KaryawanController2::class, 'store']);
 Route::get('/karyawan2/hapus/{id}', [KaryawanController2::class, 'hapus']);
+
+//EAS
+
+use App\Http\Controllers\NilaiController;
+
+Route::get('/nilai', [NilaiController::class, 'index']);
+Route::get('/nilai/tambah', [NilaiController::class, 'tambah']);
+Route::post('/nilai/store', [NilaiController::class, 'store']);
